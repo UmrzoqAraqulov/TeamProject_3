@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,11 +6,17 @@
     list-style: none;
 }
 
-.containr{
-    max-width: 1280px;
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
 
-    @media (max-width:1024px){
+.containr {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media (max-width:1300px) {
         width: 86%;
     }
-    margin: 0 auto;
 }
