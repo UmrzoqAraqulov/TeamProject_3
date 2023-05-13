@@ -1,8 +1,7 @@
 .work-s {
-    margin-top: 128px;
+    padding: 60px 0px;
     display: flex;
     align-items: center;
-    margin-bottom: 128px;
 
     .work-left {
         width: 100%;
@@ -121,9 +120,11 @@
 @media (max-width: 910px) {
     .work-s {
         flex-direction: column;
+        align-items: center;
         text-align: center;
 
         .work-left {
+            order: 2;
             .neo {
                 justify-content: center;
                 margin-bottom: 30px;
@@ -133,10 +134,13 @@
                 }
             }
         }
-
+        row-gap: 20px;
+        
+        margin:0 auto;
         .work__right {
+            order: 1;
             img {
-                width: 40%;
+                width: 50%;
             }
         }
     }
@@ -156,6 +160,22 @@
 
 @media (max-width: 610px) {
     .work-s {
+        .work-left{
+            h2{
+                font-size: 32px;
+            }
+            .pi{
+                font-size: 15px;
+            }
+            .neo .text{
+                .pi__1{
+                    font-size: 22px;
+                }
+                .pi__2{
+                    font-size: 14px;
+                }
+            }
+        }
         .work__right {
             img {
                 width: 70%;
@@ -185,8 +205,39 @@
         .work-left {
             h2 {
                 font-weight: 500;
-                font-size: 35px;
+                font-size: 30px;
                 line-height: 40px;
+            }
+            .pi{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 290px) {
+    .work-s {
+
+        .work-left {
+            h2 {
+                font-size: 26px;
+                line-height: 32px;
+            }
+            .pi{
+                font-size: 13px;
+            }
+            .neo{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .text{
+                    .pi__1{
+                        font-size: 16px;
+                    }
+                    .pi__2{
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }

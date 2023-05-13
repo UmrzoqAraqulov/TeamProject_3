@@ -178,6 +178,143 @@ footer .futer .rightda img {
     margin-top: -20px;
   }
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+.header_left {
+  width: 50%;
+}
+.header_left h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
+.header_left p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5B5B5B;
+  padding: 10px 0px;
+}
+.header_left .link a {
+  background: #F58A07;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+  border: 1.5px solid #F58A07;
+}
+.header_left .link a:hover {
+  background: transparent;
+  color: #F58A07;
+}
+.header_right {
+  width: 45%;
+  position: relative;
+}
+.header_right .img {
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+.header_right .img img {
+  width: 100%;
+}
+.header_right .img::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  transition: 0.5s;
+  top: 0;
+  left: -35%;
+  background: rgba(245, 138, 7, 0.7215686275);
+  border-radius: 15px 0px 0px 15px;
+}
+.header_right .img:hover::after {
+  left: 0;
+}
+.header_right .position {
+  position: absolute;
+  right: -40px;
+  top: 80px;
+  z-index: 10;
+}
+.header_right .position img {
+  width: 80px;
+}
+@media (max-width: 1024px) {
+  .header_left h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .header_left {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+  .header_left p {
+    font-size: 17px;
+  }
+  .header_right {
+    width: 60%;
+    order: 1;
+  }
+}
+@media (max-width: 550px) {
+  .header_left h1 {
+    font-size: 40px;
+  }
+  .header_left p {
+    font-size: 16px;
+  }
+  .header_left .link {
+    font-size: 15px;
+  }
+  .header_right {
+    width: 70%;
+  }
+  .header_right .position {
+    top: 30px;
+    right: -25px;
+  }
+  .header_right .position img {
+    width: 50px;
+  }
+}
+@media (max-width: 460px) {
+  .header_left h1 {
+    font-size: 36px;
+  }
+  .header_left p {
+    font-size: 15px;
+  }
+  .header_left .link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 365px) {
+  .header_left h1 {
+    font-size: 30px;
+  }
+  .header_left p {
+    font-size: 14px;
+  }
+  .header_right {
+    width: 80%;
+  }
+  .header_right .position {
+    display: none;
+  }
+}
+
 .work-s {
   padding: 60px 0px;
   display: flex;
@@ -478,4 +615,4 @@ footer .futer .rightda img {
   .news-s .cards .card-1 .bottom .p-3 {
     margin-top: -15px;
   }
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=services.css.map */
