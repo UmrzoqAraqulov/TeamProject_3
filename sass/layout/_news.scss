@@ -1,0 +1,201 @@
+
+.news-s {
+    background-color: #DCEAF5;
+    padding: 96px 0px;
+
+    .cards {
+        h1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.03em;
+            text-transform: capitalize;
+            color: #0D1317;
+            margin-bottom: 64px;
+        }
+
+        .fleks {
+            display: flex;
+            justify-content: space-between;
+
+            .card-1 {
+                background-color: white;
+                border-radius: 20px;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                .bottom {
+                    padding: 32px;
+
+                    h2 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 36px;
+                        /* or 150% */
+
+                        letter-spacing: -0.03em;
+
+                        color: #0D1317;
+                    }
+
+                    .p-3 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #5B5B5B;
+                        margin-left: -15px;
+                    }
+
+                    .fleks-2 {
+                        display: flex;
+
+                        p {
+                            margin-right: 8px;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: #F58A07;
+                        }
+                    }
+                }
+
+            }
+
+            .ldan {
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .news-s {
+        .cards {
+            .fleks {
+                .card-1 {
+                    .bottom {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .news-s {
+        .cards {
+            .fleks {
+                .card-1 {
+                    .bottom {
+                        .fleks-2 {
+                            margin-top: -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .news-s {
+        .cards {
+            h1 {
+                text-align: center;
+            }
+
+            .fleks {
+                text-align: center;
+                flex-direction: column;
+
+                .ldan {
+                    margin-left: 0px;
+                }
+
+                .card-1 {
+                    width: 50%;
+                    margin: auto;
+                    margin-bottom: 30px;
+
+                    .fleks-2 {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 635px) {
+    .news-s {
+        .cards {
+            .fleks {
+                .card-1 {
+                    width: 70%;
+                    margin: auto;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .news-s {
+        .cards {
+            .fleks {
+                .card-1 {
+                    width: 90%;
+                    margin: auto;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .news-s {
+        .cards {
+            h1 {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 46px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .news-s {
+        .cards {
+            h1 {
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 40px;
+            }
+
+            .card-1 {
+                .bottom {
+                    .p-3 {
+                        margin-top: -15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
