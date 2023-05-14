@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as mx;
+@import "../global";
+
+
+.header{
+    @include mx.header;
+}
+
+
+@import "../layout/work";
+@import "../layout/news";

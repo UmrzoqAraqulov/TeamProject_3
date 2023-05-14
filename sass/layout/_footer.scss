@@ -1,5 +1,3 @@
-@import "../global";
-
 footer {
     .futer {
         background-color: #063255;
@@ -139,9 +137,11 @@ footer {
         .futer {
             padding-left: 0px;
             padding-right: 0px;
+
             .leftda {
                 display: none;
             }
+
             .rightda {
                 display: none;
             }
@@ -155,10 +155,12 @@ footer {
             .futer2 {
                 flex-direction: column;
                 text-align: center;
+
                 .iconlar {
                     justify-content: center;
                     margin-bottom: 10px;
                 }
+
                 h3 {
                     margin-top: 40px;
                 }
@@ -181,6 +183,7 @@ footer {
             .futer-bottom {
                 flex-direction: column;
                 text-align: center;
+
                 p {
                     margin-top: -20px;
                 }
