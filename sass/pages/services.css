@@ -171,7 +171,6 @@ footer .futer .rightda img {
     width: 90%;
   }
   footer .futer .futer-bottom {
-    flex-direction: column;
     text-align: center;
   }
   footer .futer .futer-bottom p {
@@ -360,9 +359,12 @@ footer .futer .rightda img {
   font-size: 24px;
   line-height: 171%;
   color: #063255;
+  margin-bottom: -10px;
 }
 .work-s .work-left .neo .text .pi__2 {
   font-family: "Poppins";
+  margin-top: 10px;
+  margin-bottom: -5px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -555,6 +557,28 @@ footer .futer .rightda img {
   margin-left: 40px;
 }
 
+@media (max-width: 1100px) {
+  .news-s .cards .fleks .card-1 .bottom {
+    padding: 10px;
+  }
+}
+@media (max-width: 1015px) {
+  .news-s .cards .fleks {
+    text-align: center;
+    flex-direction: column;
+  }
+  .news-s .cards .fleks .ldan {
+    margin-left: 0px;
+  }
+  .news-s .cards .fleks .card-1 {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .news-s .cards .fleks .card-1 .fleks-2 {
+    justify-content: center;
+  }
+}
 @media (max-width: 900px) {
   .news-s .cards .fleks .card-1 .bottom {
     padding: 20px;
@@ -573,11 +597,8 @@ footer .futer .rightda img {
     text-align: center;
     flex-direction: column;
   }
-  .news-s .cards .fleks .ldan {
-    margin-left: 0px;
-  }
   .news-s .cards .fleks .card-1 {
-    width: 50%;
+    width: 70%;
     margin: auto;
     margin-bottom: 30px;
   }
@@ -585,14 +606,11 @@ footer .futer .rightda img {
     justify-content: center;
   }
 }
-@media (max-width: 635px) {
-  .news-s .cards .fleks .card-1 {
-    width: 70%;
+@media (max-width: 650px) {
+  .news-s .cards .fleks {
+    width: 90%;
     margin: auto;
-    margin-bottom: 30px;
   }
-}
-@media (max-width: 630px) {
   .news-s .cards .fleks .card-1 {
     width: 90%;
     margin: auto;
