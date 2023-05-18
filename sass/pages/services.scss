@@ -120,6 +120,7 @@
             flex-direction: column;
             &:hover{
                 box-shadow: none;
+                background: transparent;
             }
             .left{
                 width: 65%;
@@ -148,37 +149,47 @@
             }
         }
     }
-    @media(max-width:700px){
-        row-gap: 20px;
+    @media(max-width:510px){
         &_card{
-            flex-direction: column;
-            &:hover{
-                box-shadow: none;
-            }
             .left{
-                width: 65%;
+                width: 70%;
             }
+            row-gap: 20px;
             .right{
-                padding: 20px 40px;
+                padding: 10px;
                 width: 100%;
                 h3{
-                    font-size: 38px;
+                    font-size: 34px;
                 }
                 p{
                     padding: 0px;
-                    font-size: 15px;
+                    font-size: 14px;
                 }
                 ul li{
-                    font-size: 15px;
+                    font-size: 14px;
                 }
             }
         }
-        .ikki{
+    }
+    @media(max-width:400px){
+        &_card{
             .left{
-                order: 1;
+                width: 80%;
             }
+            row-gap: 20px;
             .right{
-                order: 2;
+                padding: 10px;
+                width: 100%;
+                h3{
+                    font-size: 34px;
+                }
+                p{
+                    padding: 0px;
+                    font-size: 14px;
+                }
+                ul li{
+                    font-size: 14px;
+                }
             }
         }
     }
