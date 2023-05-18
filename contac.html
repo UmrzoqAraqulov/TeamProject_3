@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- All link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./sass/layout/nav.css">
+    <link rel="stylesheet" href="sass/pages/services.css">
+</head>
+<body>
+
+    <!-- Nav -->
+        <nav>
+        <div class="nav container">
+            <div class="logo">
+                <a href="index.html">{finsweet</a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="service-page.html">Service</a></li>
+                <li><a href="company-page.html">Company</a></li>
+                <li><a href="careerpage.html">Career</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><button type="submit" class="nav-btn3">Clone project</button></li>
+            </ul>
+        </div>
+        </nav>
+    <!-- Nav -->
+    <main>
+        <section class="section1">
+          <div class="flex container">
+            <div class="right">
+                <div>
+                    <h1 class="btext">Have a question ? Let’s get in touch with us.</h1><br>
+                    <p>Fill up the Form  and ou team will get back to within 24 hrs</p>
+                </div>
+                <br><br>
+                <form>
+                  <div class="user-box">
+                    <input class="namee" type="text" name="email" required>
+                    <label>Name *</label>
+                  </div><br>
+                  <div class="user-box">
+                    <input type="text" required />
+                    <label>Last Name *</label>
+                  </div><br>
+                  <div class="user-box">
+                    <input type="email" required />
+                    <label>Email Address *</label>
+                  </div><br>
+                  <div class="user-box">
+                    <input type="text" required />
+                    <label>Title *</label>
+                  </div><br>
+                  <div class="user-box">
+                    <textarea name="Text" id="" cols="30" rows="5"></textarea>
+                  </div>
+                  <span class="span-message"></span><br>
+                  <button type="submit" class="nav-btn2">Submit</button>
+                </form>
+              </div>
+            <div class="left">
+                <div class="flex2">
+                    <div>
+                    <h2>Location</h2>
+                    <p>DLF Cybercity, Bhubaneswar, 
+                       <br> India, &52050</p>
+                    </div>
+                    <div>
+                    <h2>Contact Us</h2>
+                    <p>020 7993 2905</p>
+                    <p>hi@finsweet.com</p>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191884.83987139366!2d69.11455665227464!3d41.28273794628058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1684413626953!5m2!1sru!2s" width="" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <img class="m" src="./img/Group 7.png" alt="">
+        </section>
+    </main>
+
+    <footer>
+        <div class="futer">
+            <div class="futer2 containr">
+                <div>
+                    <img src=".//image/imageBottom/footer.svg" alt="">
+                    <h1>Bespoke software <br> solutions</h1>
+                    <div class="iconlar">
+                        <div>
+                            <img src="image/imageBottom/facebook.png" alt="">
+                        </div>
+                        <div class="iconleft">
+                            <img src="image/imageBottom/youtube.png" alt="">
+                        </div>
+                        <div class="iconleft">
+                            <img src="image/imageBottom/instagram.png" alt="">
+                        </div>
+                        <div class="iconleft">
+                            <img src="image/imageBottom/twitter.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Services</p>
+                    <p>Blog</p>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <p>hi@finsweet.com</p>
+                    <p>+(123) 456-7890</p>
+                </div>
+                <div class="end">
+                    <h3>Join Newsletter</h3>
+                    <div class="inp">
+                        <input type="text" placeholder="Type email here">
+                    </div>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="futer-bottom container">
+                <div>
+                    <p>© All rights reserved – Finsweet</p>
+                </div>
+                <div>
+                    <p>Privacy Policy | Terms & Conditions</p>
+                </div>
+            </div>
+            <div class="leftda">
+                <img src="image/imageBottom/footer-Left.png" alt="">
+            </div>
+            <div class="rightda">
+                <img src="image/imageBottom/footer-Right.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+  <script src="./script.js">
+
+    const btn = document.querySelector(".nav-btn2");
+    const namee = document.querySelector(".namee");
+    const message = document.querySelector(".span-message");
+
+    let data = [];
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (namee.value) {
+        // window.location.href = "./signup.html";  
+      } else {
+        message.innerHTML = `
+    <span>Iltimos Malmotlarni tuliq tuldiring 🤔</span>
+    `
+        setInterval(() => {
+          message.innerHTML = `
+        <span> </span>
+        `
+        }, 4300)
+
+      }
+    })
+  </script>
+
+</body>
+</html>

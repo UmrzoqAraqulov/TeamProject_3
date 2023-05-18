@@ -23,6 +23,7 @@
                 background-color: white;
                 border-radius: 20px;
                 width: 100%;
+                transition: .3s;
 
                 img {
                     width: 100%;
@@ -37,11 +38,9 @@
                         font-weight: 500;
                         font-size: 24px;
                         line-height: 36px;
-                        /* or 150% */
-
                         letter-spacing: -0.03em;
-
                         color: #0D1317;
+                        transition: .3s;
                     }
 
                     .p-3 {
@@ -52,6 +51,7 @@
                         line-height: 28px;
                         color: #5B5B5B;
                         margin-left: -15px;
+                        transition: .3s;
                     }
 
                     .fleks-2 {
@@ -65,9 +65,36 @@
                             font-size: 16px;
                             color: #F58A07;
                         }
+
+                        i {
+                            color: #F58A07;
+
+                        }
                     }
                 }
 
+            }
+
+            .card-1:hover {
+                background-color: #F58A07;
+                color: white;
+
+                h2 {
+                    color: white;
+                }
+
+                .p-3 {
+                    color: white;
+                }
+
+                .fleks-2 {
+                    p {
+                        color: white;
+                    }
+                    i {
+                        color: white;
+                    }
+                }
             }
 
             .ldan {
@@ -218,4 +245,4 @@
             }
         }
     }
-} 
+}
