@@ -6,6 +6,184 @@
     @include mx.header;
 }
 
+.servic{
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    .bir{
+        .left::after{
+            left: -6%;
+        }
+    }
+    .ikki{
+        .left{
+            order: 2;
+            &::after{
+                right: -6%;
+            }
+        }
+        .right{
+            order: 1;
+        }
+    }
+    &_card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-radius: 20px;
+        cursor: pointer;
+        border: 1.5ps solid white;
+        transition: .3s;
+        &:hover{
+            border-color: gray;
+            background: rgba(0, 0, 0, 0.066);
+            box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, 0.484);
+        }
+        .left{
+            width: 44%;
+            img{
+                width: 100%;
+            }
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 30%;
+                width: 13%;
+                height: 15%;
+                background: #f58a07cb;
+                border-radius: 10px;
+            }
+        }
+        .right{
+            padding: 30px;
+            width: 50%;
+            h3{
+                font-size: 48px;
+                font-weight: 600;
+                color: #0D1317;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                color: #5B5B5B;
+                padding: 10px 0px 5px;
+            }
+            ul{
+                padding: 0px 0px 0px 12px;
+                margin: 0;
+                li{
+                    padding: 2px 0px;
+                    margin: 0;
+                    color: #5B5B5B;
+                    font-size: 16px;
+                    font-weight: 500;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: #0D1317;
+                        top: 10px;
+                        left: -12px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:860px){
+        row-gap: 20px;
+        &_card{
+            .right{
+                padding: 15px 18px;
+                width: 60%;
+                h3{
+                    font-size: 38px;
+                }
+                p{
+                    padding: 0px;
+                    font-size: 15px;
+                }
+                ul li{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    @media(max-width:700px){
+        row-gap: 20px;
+        &_card{
+            flex-direction: column;
+            &:hover{
+                box-shadow: none;
+            }
+            .left{
+                width: 65%;
+            }
+            .right{
+                padding: 20px 40px;
+                width: 100%;
+                h3{
+                    font-size: 38px;
+                }
+                p{
+                    padding: 0px;
+                    font-size: 15px;
+                }
+                ul li{
+                    font-size: 15px;
+                }
+            }
+        }
+        .ikki{
+            .left{
+                order: 1;
+            }
+            .right{
+                order: 2;
+            }
+        }
+    }
+    @media(max-width:700px){
+        row-gap: 20px;
+        &_card{
+            flex-direction: column;
+            &:hover{
+                box-shadow: none;
+            }
+            .left{
+                width: 65%;
+            }
+            .right{
+                padding: 20px 40px;
+                width: 100%;
+                h3{
+                    font-size: 38px;
+                }
+                p{
+                    padding: 0px;
+                    font-size: 15px;
+                }
+                ul li{
+                    font-size: 15px;
+                }
+            }
+        }
+        .ikki{
+            .left{
+                order: 1;
+            }
+            .right{
+                order: 2;
+            }
+        }
+    }
+}
+
 
 @import "../layout/work";
 @import "../layout/news";
