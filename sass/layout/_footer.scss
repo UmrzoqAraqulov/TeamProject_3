@@ -63,7 +63,7 @@ footer {
 
                     input {
                         padding: 15px 18px;
-                        width: 100%;
+                        width: 150%;
                         border-radius: 31px;
                     }
                 }
@@ -71,6 +71,7 @@ footer {
                 button {
                     all: unset;
                     cursor: pointer;
+                    // width: 200px;
                     padding: 17px 32px;
                     color: white;
                     background-color: #F58A07;
@@ -97,6 +98,11 @@ footer {
                 font-size: 16px;
                 line-height: 24px;
                 padding-bottom: 30px;
+                transition: .3s;
+                &:hover {
+                    cursor: pointer;
+                    color: #F58A07;
+                }
             }
         }
 
@@ -128,6 +134,30 @@ footer {
         .futer {
             padding-left: 40px;
             padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    footer {
+        .futer {
+            .futer2 {
+                flex-direction: column;
+                text-align: center;
+
+                .iconlar {
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    margin-top: 40px;
+                }
+                .end {
+                    width: 500px;
+                    margin: auto;
+                }
+            }
         }
     }
 }
@@ -169,6 +199,47 @@ footer {
     }
 }
 
+@media (max-width: 600px) {
+    footer {
+        .futer {
+            .futer2 {
+                flex-direction: column;
+                text-align: center;
+
+                .iconlar {
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    margin-top: 40px;
+                }
+                .end {
+                    width: 300px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 567px) {
+    footer {
+        .futer {
+            .futer-bottom {
+                flex-direction: column;
+                text-align: center;
+                div {
+                    margin-top: -20px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .work-s {
         .work__right {
@@ -185,6 +256,30 @@ footer {
 
                 p {
                     margin-top: -20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        .futer {
+            .futer2 {
+                flex-direction: column;
+                text-align: center;
+
+                .iconlar {
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    margin-top: 40px;
+                }
+                .end {
+                    width: 100%;
+                    margin: auto;
                 }
             }
         }

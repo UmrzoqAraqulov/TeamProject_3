@@ -88,7 +88,7 @@ footer .futer .futer2 .end .inp {
 }
 footer .futer .futer2 .end .inp input {
   padding: 15px 18px;
-  width: 100%;
+  width: 150%;
   border-radius: 31px;
 }
 footer .futer .futer2 .end button {
@@ -117,6 +117,11 @@ footer .futer .futer-bottom p {
   font-size: 16px;
   line-height: 24px;
   padding-bottom: 30px;
+  transition: 0.3s;
+}
+footer .futer .futer-bottom p:hover {
+  cursor: pointer;
+  color: #F58A07;
 }
 footer .futer .leftda {
   position: absolute;
@@ -139,6 +144,23 @@ footer .futer .rightda img {
   footer .futer {
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+@media (max-width: 1100px) {
+  footer .futer .futer2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .futer .futer2 .iconlar {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  footer .futer .futer2 h3 {
+    margin-top: 40px;
+  }
+  footer .futer .futer2 .end {
+    width: 500px;
+    margin: auto;
   }
 }
 @media (max-width: 1000px) {
@@ -166,6 +188,35 @@ footer .futer .rightda img {
     margin-top: 40px;
   }
 }
+@media (max-width: 600px) {
+  footer .futer .futer2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .futer .futer2 .iconlar {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  footer .futer .futer2 h3 {
+    margin-top: 40px;
+  }
+  footer .futer .futer2 .end {
+    width: 300px;
+    margin: auto;
+  }
+}
+@media (max-width: 567px) {
+  footer .futer .futer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .futer .futer-bottom div {
+    margin-top: -20px;
+  }
+  footer .futer .futer-bottom div:hover {
+    cursor: pointer;
+  }
+}
 @media (max-width: 500px) {
   .work-s .work__right img {
     width: 90%;
@@ -175,6 +226,23 @@ footer .futer .rightda img {
   }
   footer .futer .futer-bottom p {
     margin-top: -20px;
+  }
+}
+@media (max-width: 400px) {
+  footer .futer .futer2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .futer .futer2 .iconlar {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  footer .futer .futer2 h3 {
+    margin-top: 40px;
+  }
+  footer .futer .futer2 .end {
+    width: 100%;
+    margin: auto;
   }
 }
 .header {
@@ -516,6 +584,7 @@ footer .futer .rightda img {
   background-color: white;
   border-radius: 20px;
   width: 100%;
+  transition: 0.3s;
 }
 .news-s .cards .fleks .card-1 img {
   width: 100%;
@@ -529,9 +598,9 @@ footer .futer .rightda img {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  /* or 150% */
   letter-spacing: -0.03em;
   color: #0D1317;
+  transition: 0.3s;
 }
 .news-s .cards .fleks .card-1 .bottom .p-3 {
   font-family: "Poppins";
@@ -541,6 +610,7 @@ footer .futer .rightda img {
   line-height: 28px;
   color: #5B5B5B;
   margin-left: -15px;
+  transition: 0.3s;
 }
 .news-s .cards .fleks .card-1 .bottom .fleks-2 {
   display: flex;
@@ -552,6 +622,25 @@ footer .futer .rightda img {
   font-weight: 500;
   font-size: 16px;
   color: #F58A07;
+}
+.news-s .cards .fleks .card-1 .bottom .fleks-2 i {
+  color: #F58A07;
+}
+.news-s .cards .fleks .card-1:hover {
+  background-color: #F58A07;
+  color: white;
+}
+.news-s .cards .fleks .card-1:hover h2 {
+  color: white;
+}
+.news-s .cards .fleks .card-1:hover .p-3 {
+  color: white;
+}
+.news-s .cards .fleks .card-1:hover .fleks-2 p {
+  color: white;
+}
+.news-s .cards .fleks .card-1:hover .fleks-2 i {
+  color: white;
 }
 .news-s .cards .fleks .ldan {
   margin-left: 40px;
