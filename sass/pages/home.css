@@ -140,6 +140,11 @@ footer .futer .rightda img {
   width: 100%;
 }
 
+@media (max-width: 1620px) {
+  footer .futer .futer2 .end .inp input {
+    width: 100%;
+  }
+}
 @media (max-width: 1380px) {
   footer .futer {
     padding-left: 40px;
