@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 841px !important;
+    max-width: 1280px !important;
     margin: auto;
     padding: 0px 20px;
 }
@@ -30,6 +30,8 @@
 }
 
 main {
+    max-width: 841px;
+    margin: auto;
     .n-section1 {
         display: flex;
         justify-content: space-between;
