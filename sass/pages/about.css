@@ -420,13 +420,8 @@ footer .futer .futer2 p:hover {
   color: #F58A07;
 }
 footer .futer .futer2 .end .inp {
-  width: 100%;
+  width: 10%;
   margin-bottom: 16px;
-}
-footer .futer .futer2 .end .inp input {
-  padding: 15px 18px;
-  width: 150%;
-  border-radius: 31px;
 }
 footer .futer .futer2 .end button {
   all: unset;
@@ -477,6 +472,17 @@ footer .futer .rightda img {
   width: 100%;
 }
 
+@media (max-width: 1620px) {
+  footer .futer .futer2 .end {
+    width: 100px;
+  }
+  footer .futer .futer2 .end .inp {
+    width: 100px;
+  }
+  footer .futer .futer2 .end .inp input {
+    width: 10%;
+  }
+}
 @media (max-width: 1380px) {
   footer .futer {
     padding-left: 40px;
