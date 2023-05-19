@@ -84,6 +84,12 @@ input[type=checkbox] {
 }
 
 @media (max-width: 950px) {
+  .nav-btn3 {
+    display: none;
+  }
+  #aa {
+    display: none;
+  }
   .nav {
     padding: 0px 30px;
   }

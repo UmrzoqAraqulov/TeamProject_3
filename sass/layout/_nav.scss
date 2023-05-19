@@ -254,6 +254,9 @@ input[type="checkbox"]{
 
 // Nav , Section1
 @media (max-width: 950px) {
+  #aa{
+    display: none;
+  }
   .nav{
     padding: 0px 30px;
     ul{
@@ -322,6 +325,9 @@ input[type="checkbox"]{
     gap: 50px;
     width: 100%;
   }
+  .nav-btn3{
+    display: none;
+  }
   .left h1 {
     font-size: 50px;
   }
@@ -336,5 +342,8 @@ input[type="checkbox"]{
   }
   .right {
     width: 100%;
+  }
+  .nav-btn3{
+    display: none;
   }
 }
